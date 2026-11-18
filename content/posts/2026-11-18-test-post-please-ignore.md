@@ -1,7 +1,7 @@
 ---
 title: 'Test post: please ignore'
 date: 2026-11-18
-image: https://picsum.photos/id/454/1920/1280.webp
+image: /assets/uploads/Screenshot 2026-11-12 at 12.36.53.png
 image_alt: Test image
 summary: A test post to check the news editor. It will be deleted shortly.
 link: ''
