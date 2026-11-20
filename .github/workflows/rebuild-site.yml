@@ -1,10 +1,13 @@
-# Tells Cloudflare Pages to rebuild the website whenever a post or image changes.
+# Tells Cloudflare Pages to rebuild the website whenever a post, event, In Memoriam entry or image changes, and every morning.
 # CF_DEPLOY_HOOK is the slf-preview project's deploy hook URL (Cloudflare: slf-preview > Settings > Builds > Deploy hooks),
 # stored as a repository secret.
 name: Rebuild the website
 on:
   push:
     branches: [main]
+  # Every morning too, so events that are over drop off the Events page without anyone saving (20 Nov 2026)
+  schedule:
+    - cron: "15 4 * * *"
   workflow_dispatch:
 jobs:
   rebuild:
